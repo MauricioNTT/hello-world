@@ -16,5 +16,4 @@ jobs:
       with: 
         message: Hello, inputs! 
     
-    - run: echo "${{ steps.action.outputs.result }}"
     
