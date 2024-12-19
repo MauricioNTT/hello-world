@@ -16,4 +16,5 @@ jobs:
       with: 
         message: Hello, inputs! 
     
+    - run: echo "Capturando output da action: ${{ steps.action.outputs.result }}"
     
