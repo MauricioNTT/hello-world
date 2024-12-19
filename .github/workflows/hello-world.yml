@@ -11,6 +11,10 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     
-    - uses: MauricioNTT/hello-action@main
+    - id: action
+      uses: MauricioNTT/hello-action@main
       with: 
         message: Hello, inputs! 
+    
+    - run: echo ${{ steps.action.outputs.result }}
+    
