@@ -16,5 +16,6 @@ jobs:
       with: 
         message: Hello, inputs! 
     
-    - run: echo "Capturando output do env: ${{ env.output }}"
+    - run: |
+        echo "Capturando output do env: ${{env.result}}"
     
